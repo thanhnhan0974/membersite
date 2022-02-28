@@ -1,0 +1,110 @@
+header .top-header {
+    color: #ffffff;
+    height: 64px;
+}
+
+header .top-header .top-header-left,
+header .top-header .top-header-right {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+header .top-header .top-header-left .logo {
+    width: 118px;
+    height: 52px;
+}
+
+header .top-header .top-header-left .list-menu {
+    display: flex;
+    padding-left: 30px;
+    margin: 0;
+    align-items: center;
+    height: 64px;
+}
+
+header .top-header .top-header-left .list-menu .menu-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid transparent;
+    padding-top: 4px;
+}
+
+header .top-header .top-header-left .list-menu .menu-item.active {
+    border-bottom: 4px solid #fff;
+}
+
+header .top-header .top-header-left .list-menu .menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .top-header .top-header-left .list-menu .menu-item a {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+header .top-header .top-header-left .list-menu .menu-item:hover a {
+    opacity: 1;
+}
+
+header .top-header .top-header-right a.btn-login {
+    padding: 4px 10px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 18px;
+}
+
+header .top-header .top-header-right a.btn-login:focus {
+    background-color: rgba(249, 250, 252, 0.4);
+}
+
+header .top-header .top-header-right a.btn-login:nth-child(1) {
+    background-color: rgb(8, 174, 244);
+    margin-right: 4px;
+}
+
+header .top-header .top-header-right a.btn-login:nth-child(2) {
+    background-color: rgb(79, 83, 92);
+}
+
+
+
+@media (max-width: 767.98px) { 
+    header .top-header .top-header-left .list-menu {
+        display: none;
+    }
+    header .top-header .top-header-right {
+        display: none;
+    }
+    header .top-header .top-header-left {
+        width: 100%;
+        justify-content: center;
+    }
+    .sidebar {
+        position: absolute;
+        top: 0;
+        z-index: 99;
+        background-color: #191F29;
+    }
+    .sidebar aside .sidebar-list{ 
+        background-color: #191F29;
+        max-height: 100vh;
+    }
+    .hr-menu {
+        display: none;
+    }
+    .box_v {
+       padding: 1rem 0.5rem;
+    }
+    .box-sidebar-container.active{
+        display: block;
+        width: 100vw;
+        background: #00000050;
+        height: 100vh;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+    }
+}
