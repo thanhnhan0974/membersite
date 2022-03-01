@@ -7,10 +7,12 @@ class Controller{
     }
 
     public function view($view, $data=[]){
+
         $link = explode('.', $view);
+
         $this->node = sizeof($link);
         if (sizeof($link)==1) {
-        require_once "./membersite/views/".$view.".php";
+            require_once "./membersite/views/".$view.".php";
         }
         else{
          $url =  "./membersite/views";

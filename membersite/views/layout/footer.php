@@ -1,3 +1,4 @@
+<hr class="hr-light mb-3">
 <div class="row footer">
     <div class="col-md-6 box_m-footer">
         <a href="" class="menu-footer">利用規約</a>

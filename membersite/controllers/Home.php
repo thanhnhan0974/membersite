@@ -5,11 +5,11 @@ class Home extends Controller{
 
 
     function index(){
-        $teo = $this->model("SinhVienModel");
+//        $teo = $this->model("SinhVienModel");
      
-        $this->view('index');
-        // echo $teo->GetSV();
-    //    echo $this->getPublic('abc.css');
+        $this->view('index', [
+            "Page" => "pages/index",
+        ]);
 
     }
 // http://localhost/live/Home/Show/1/2
