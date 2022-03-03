@@ -8,7 +8,7 @@
     <aside class="" id="aside">
         <ul class="sidebar-list style-scrollbar mt-1">
             <li class="active sidebar-item">
-                <a href="">もてる</a>
+                <a href="<?php  ?>">もてる</a>
             </li>
             <li class="sidebar-item">
                 <a href="">セルフコンパッション</a>

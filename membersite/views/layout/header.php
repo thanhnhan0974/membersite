@@ -1,12 +1,12 @@
 <header class=" container-fluid ">
-    <div class="top-header d-flex justify-content-between align-items-center mb-3">
+    <div class="top-header d-flex justify-content-between align-items-center mb-1">
         <div class="top-header-left">
             <div class="logo">
                 <img src="public/Image/logo.png" alt="" class="img-fluid">
             </div>
         </div>
         <div class="top-header-right">
-            <a href="" class="btn-login">ログイン</a>
+            <a href="<?php  ?>" class="btn-login">ログイン</a>
             <a href="" class="btn-login">新規登録</a>
         </div>
     </div>

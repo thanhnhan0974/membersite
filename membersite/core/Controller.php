@@ -1,10 +1,18 @@
 <?php
 class Controller{
     public $note = 1;
+    public $setting;
+    public $header;
+
+    function __construct ()
+    {
+        $this->initSetting();
+    }
     public function model($model){
         require_once "./membersite/models/".$model.".php";
         return new $model;
     }
+
 
     public function view($view, $data=[]){
 
@@ -84,6 +92,12 @@ class Controller{
             echo $url;
         }
 
+    }
+
+    function initSetting()
+    {
+        $this->setting = $this->model('SettingModel')->getSetting();
+        $this->style = $this->model('SettingModel')->getStyle();
     }
 
 }
