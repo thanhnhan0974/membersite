@@ -11,6 +11,6 @@ class SettingModel {
 
     public function getStyle()
     {
-        return ['header_h' => 60, 'header_w' => 0, 'bg_color' => '#191F29'];
+        return ['header_h' => 60, 'header_w' => 0, 'bg_color' => '#191F29', 'bg_footer' => '#191F29', 'txt_color' => '#fff'];
     }
 }

@@ -6,12 +6,12 @@
             </div>
         </div>
         <div class="top-header-right">
-            <a href="<?php  ?>" class="btn-login">ログイン</a>
-            <a href="" class="btn-login">新規登録</a>
+            <a href="<?php  ?>" class="btn-login txt_color">ログイン</a>
+            <a href="" class="btn-login txt_color">新規登録</a>
         </div>
     </div>
 
-    <div class="row" class="bgcl-dark">
+    <div class="row" class="bg_color">
         <form>
             <div class="input-group mb-3">
 
