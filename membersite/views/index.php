@@ -73,6 +73,7 @@
             $('.sidebar').toggleClass('active');
             $('.box-sidebar-container').toggleClass('active');
         })
+
     </script>
 </body>
 
