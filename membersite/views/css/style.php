@@ -21,4 +21,4 @@
     .txt_color {
         color: <?php echo $data['style']['txt_color']; ?>;
     }
-</style>
+</style> 
