@@ -3,7 +3,8 @@
         color: #ffffff;
         height: <?php echo $data['style']['header_h']; ?>px;
     }
-    .bgcl-dark {
+
+    .bg_color {
         background-color: <?php echo $data['style']['bg_color']; ?>;
     }
         #logo{
@@ -12,4 +13,12 @@
             display: block;
             width: 100%;
         }
+
+    .footer {
+        background-color: <?php echo $data['style']['bg_footer']; ?>;
+    }
+
+    .txt_color {
+        color: <?php echo $data['style']['txt_color']; ?>;
+    }
 </style>

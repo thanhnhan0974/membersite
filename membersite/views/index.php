@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,35 +18,37 @@
 
 </head>
 
-<body class="bgcl-dark ">
+<body class="bg_color">
 
     <?php $this->layout('header'); ?>
 
     <main >
 
-        <div class="bgcl-dark d-flex container-fluid">
+        <div class="bg_color d-flex container-fluid">
 
             <?php $this->layout('sidebar'); ?>
 
-            <div class="mb-3 main w-100">
-                <div class="w-100 bgcl-dark main-w-right style-scrollbar">
+            <div class="mt-3 main w-100">
+                <div class="w-100 bg_color main-w-right style-scrollbar">
 
                     <div class="top_m-menu mb-3">
-                        <button class="btn top_m-menu-btn active">TOP</button>
-                        <button class="btn top_m-menu-btn ">男女関係</button>
-                        <button class="btn top_m-menu-btn">お金</button>
-                        <button class="btn top_m-menu-btn">勉強</button>
-                        <button class="btn top_m-menu-btn">男女関係</button>
-                        <button class="btn top_m-menu-btn">お金</button>
-                        <button class="btn top_m-menu-btn">勉強</button>
-                        <button class="btn top_m-menu-btn">お金</button>
+                        <button class="btn txt_color top_m-menu-btn active">TOP</button>
+                        <button class="btn txt_color top_m-menu-btn ">男女関係</button>
+                        <button class="btn txt_color top_m-menu-btn">お金</button>
+                        <button class="btn txt_color top_m-menu-btn">勉強</button>
+                        <button class="btn txt_color top_m-menu-btn">男女関係</button>
+                        <button class="btn txt_color top_m-menu-btn">お金</button>
+                        <button class="btn txt_color top_m-menu-btn">勉強</button>
+                        <button class="btn txt_color top_m-menu-btn">お金</button>
                     </div>
 
                     <?php $this->view($data["Page"]); ?>
 
                 </div>
 
+                <div class="main-w-right">
                 <?php $this->layout('footer'); ?>
+                </div>
 
             </div>
         </div>
@@ -74,6 +77,25 @@
             $('.box-sidebar-container').toggleClass('active');
         })
 
+        // $(window).resize(unActiveMenu());
+        $( window ).resize(function() {
+            unActiveMenu()
+        });
+        $(window).on('load', unActiveMenu());
+
+        function unActiveMenu() {
+            let windowWidth = $(window).width();
+            console.log(windowWidth)
+            if(windowWidth < 1024) {
+                console.log(windowWidth)
+                $('.sidebar').removeClass('active');
+                $('.box-sidebar-container').removeClass('active');
+            }
+            else {
+                $('.sidebar').addClass('active');
+                $('.box-sidebar-container').addClass('active');
+            }
+        }
     </script>
 </body>
 

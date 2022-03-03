@@ -20,10 +20,6 @@ a {
     text-decoration: none;
 }
 
-.bgcl-dark {
-    background-color: #191F29;
-}
-
 .text-split-2 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -52,7 +48,6 @@ main {
 }
 
 .box_v {
-    background-color: #191F29;
     padding: 1rem 2rem;
 }
 
@@ -65,12 +60,10 @@ main {
 .box_v .box_v-header .btn_border {
     padding: 5px 20px;
     font-size: 0.7rem;
-    color: #fff;
     background: none;
 }
 
 .box_v .box_v-title {
-    color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -101,11 +94,11 @@ main {
 }
 
 .box_v-card .box_v-card-btn button {
-    color: #fff;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     background-color: #191F29;
+    color: #fff;
 }
 
 .box_v-card .box_v-card-star {
@@ -119,7 +112,6 @@ main {
 }
 
 .box_v-card .box_v-card-title {
-    color: #fff;
     font-size: 1rem;
 }
 
@@ -178,8 +170,8 @@ main {
 
 /* ========menu footer======= */
 
+
 .box_m-footer .menu-footer {
-    color: #fff;
     font-size: 0.55rem;
     padding: 5px 10px;
 }
@@ -202,12 +194,13 @@ main {
 /*=================SIDEBAR=============*/
 
 .sidebar {
-    transition: all 0.3s ease-in-out;
+    transition: all 1s;
     position: sticky;
     width: 49px;
+
 }
 .sidebar.active {
-
+    transition: all 1s;
     width: 260px;
 }
 .box-sidebar-container {
@@ -224,11 +217,16 @@ main {
     left: -360px;
     display: none;
     z-index: 4;
+    transition: all 4s;
 }
 
 .sidebar .sidebar-toggle .btn-sidebar-toggle {
-    color: #fff;
     font-size: 2rem;
+    color: #fff;
+}
+
+.sidebar .sidebar-toggle .btn-sidebar-toggle i{
+    color: #fff;
 }
 
 .sidebar-toggle{
@@ -248,7 +246,6 @@ main {
     min-width: 221.49px;
 }
 .sidebar aside .sidebar-list .sidebar-item a{
-    color: #fff;
 }
 
 .sidebar aside .sidebar-list .sidebar-item.active, .sidebar aside .sidebar-list .sidebar-item:hover{
@@ -315,7 +312,6 @@ main {
     padding: 3px 4px;
     max-width: 148px;
     width: 200px;
-    color: #fff;
 }
 .frm-login table {
     margin: auto;
@@ -340,7 +336,6 @@ main {
 .title-input-frm {
     background-color: #7A9496;
     padding: 5px 10px;
-    color: #fff;
     border-radius: 5px;
     width: 150px;
     margin-right: 10px;
@@ -355,3 +350,8 @@ main {
 }
 /*======================== RESPONSIVE =================*/
 
+@media screen and (min-width: 1024px) {
+    .sidebar-toggle  {
+        display: none;
+    }
+}

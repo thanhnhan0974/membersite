@@ -36,7 +36,7 @@ header .top-header .top-header-left .list-menu .menu-item:not(:last-child) {
 }
 
 header .top-header .top-header-left .list-menu .menu-item a {
-    color: #fff;
+    /*color: #fff;*/
     opacity: 0.8;
     font-weight: 600;
 }
@@ -48,7 +48,6 @@ header .top-header .top-header-left .list-menu .menu-item:hover a {
 header .top-header .top-header-right a.btn-login {
     padding: 4px 10px;
     font-weight: 600;
-    color: #fff;
     border-radius: 18px;
 }
 
